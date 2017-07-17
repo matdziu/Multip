@@ -8,8 +8,8 @@ import android.widget.Toast;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import pl.multip.RecyclerItem;
 import pl.multipexample.R;
-import pl.multipexample.lib.RecyclerItem;
 
 public class ItemButton implements RecyclerItem<ItemButton.ViewHolder> {
 

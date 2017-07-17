@@ -2,9 +2,10 @@ package pl.multipexample;
 
 import java.util.List;
 
-import pl.multipexample.lib.DelegateAdapter;
-import pl.multipexample.lib.RecyclerItem;
-import pl.multipexample.lib.ViewHoldersFactory;
+import pl.multip.DelegateAdapter;
+import pl.multip.RecyclerItem;
+import pl.multip.ViewHoldersFactory;
+
 
 public class MainAdapter extends DelegateAdapter {
 

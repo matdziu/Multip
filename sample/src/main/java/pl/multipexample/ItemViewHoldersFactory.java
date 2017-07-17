@@ -6,10 +6,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import pl.multip.ViewHoldersFactory;
 import pl.multipexample.items.ItemButton;
 import pl.multipexample.items.ItemPicture;
 import pl.multipexample.items.ItemText;
-import pl.multipexample.lib.ViewHoldersFactory;
 
 class ItemViewHoldersFactory implements ViewHoldersFactory {
 

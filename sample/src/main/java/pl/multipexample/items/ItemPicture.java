@@ -7,8 +7,8 @@ import android.widget.ImageView;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import pl.multip.RecyclerItem;
 import pl.multipexample.R;
-import pl.multipexample.lib.RecyclerItem;
 
 public class ItemPicture implements RecyclerItem<ItemPicture.ViewHolder> {
 
