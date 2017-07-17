@@ -10,10 +10,10 @@ import pl.multipexample.items.ItemButton;
 import pl.multipexample.items.ItemPicture;
 import pl.multipexample.items.ItemText;
 
-public class ItemsFactory {
+class ItemsFactory {
 
     @SuppressLint("DefaultLocale")
-    public static RecyclerView.ViewHolder create(ViewGroup parent, int viewType) {
+    static RecyclerView.ViewHolder create(ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(parent.getContext());
         View itemView = inflater.inflate(viewType, parent, false);
 
