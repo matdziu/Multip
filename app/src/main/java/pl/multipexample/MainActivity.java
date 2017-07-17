@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
         populate(dataSet);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        recyclerView.setAdapter(new MainAdapter(dataSet));
+        recyclerView.setAdapter(new MainAdapter(new ItemsFactory(), dataSet));
     }
 
     void populate(List<RecyclerItem> dataSet) {

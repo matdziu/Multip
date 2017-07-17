@@ -7,11 +7,17 @@ import java.util.List;
 
 public abstract class DelegateAdapter extends RecyclerView.Adapter {
 
-    abstract public List<RecyclerItem> getDataSet();
+    private final RecyclerItemsFactory recyclerItemsFactory;
+
+    public DelegateAdapter(RecyclerItemsFactory recyclerItemsFactory) {
+        this.recyclerItemsFactory = recyclerItemsFactory;
+    }
+
+    public abstract List<RecyclerItem> getDataSet();
 
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        return ItemsFactory.create(parent, viewType);
+        return recyclerItemsFactory.create(parent, viewType);
     }
 
     @SuppressWarnings("unchecked")

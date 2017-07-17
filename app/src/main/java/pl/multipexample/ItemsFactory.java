@@ -1,4 +1,4 @@
-package pl.multipexample.lib;
+package pl.multipexample;
 
 import android.annotation.SuppressLint;
 import android.support.v7.widget.RecyclerView;
@@ -9,11 +9,13 @@ import android.view.ViewGroup;
 import pl.multipexample.items.ItemButton;
 import pl.multipexample.items.ItemPicture;
 import pl.multipexample.items.ItemText;
+import pl.multipexample.lib.RecyclerItemsFactory;
 
-class ItemsFactory {
+class ItemsFactory implements RecyclerItemsFactory {
 
     @SuppressLint("DefaultLocale")
-    static RecyclerView.ViewHolder create(ViewGroup parent, int viewType) {
+    @Override
+    public RecyclerView.ViewHolder create(ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(parent.getContext());
         View itemView = inflater.inflate(viewType, parent, false);
 
