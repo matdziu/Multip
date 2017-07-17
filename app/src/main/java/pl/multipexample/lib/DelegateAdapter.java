@@ -11,7 +11,7 @@ public abstract class DelegateAdapter extends RecyclerView.Adapter {
 
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        return ItemsFactory.onCreateViewHolder(parent, viewType);
+        return ItemsFactory.create(parent, viewType);
     }
 
     @SuppressWarnings("unchecked")

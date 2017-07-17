@@ -13,7 +13,7 @@ import pl.multipexample.items.ItemText;
 public class ItemsFactory {
 
     @SuppressLint("DefaultLocale")
-    public static RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public static RecyclerView.ViewHolder create(ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(parent.getContext());
         View itemView = inflater.inflate(viewType, parent, false);
 
