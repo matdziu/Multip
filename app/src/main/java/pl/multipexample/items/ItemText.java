@@ -7,7 +7,7 @@ import android.widget.TextView;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import pl.multipexample.R;
-import pl.multipexample.RecyclerItem;
+import pl.multipexample.lib.RecyclerItem;
 
 public class ItemText implements RecyclerItem<ItemText.ViewHolder> {
 

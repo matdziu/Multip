@@ -14,6 +14,7 @@ import butterknife.ButterKnife;
 import pl.multipexample.items.ItemButton;
 import pl.multipexample.items.ItemPicture;
 import pl.multipexample.items.ItemText;
+import pl.multipexample.lib.RecyclerItem;
 
 public class MainActivity extends AppCompatActivity {
 

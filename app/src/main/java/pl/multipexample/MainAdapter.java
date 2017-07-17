@@ -1,11 +1,11 @@
 package pl.multipexample;
 
-import android.support.v7.widget.RecyclerView;
-import android.view.ViewGroup;
-
 import java.util.List;
 
-public class MainAdapter extends RecyclerView.Adapter {
+import pl.multipexample.lib.DelegateAdapter;
+import pl.multipexample.lib.RecyclerItem;
+
+public class MainAdapter extends DelegateAdapter {
 
     private List<RecyclerItem> dataSet;
 
@@ -14,23 +14,7 @@ public class MainAdapter extends RecyclerView.Adapter {
     }
 
     @Override
-    public int getItemViewType(int position) {
-        return dataSet.get(position).getItemViewType();
-    }
-
-    @Override
-    public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        return ItemsFactory.onCreateViewHolder(parent, viewType);
-    }
-
-    @SuppressWarnings("unchecked")
-    @Override
-    public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
-        dataSet.get(position).onBindViewHolder(holder);
-    }
-
-    @Override
-    public int getItemCount() {
-        return dataSet.size();
+    public List<RecyclerItem> getDataSet() {
+        return dataSet;
     }
 }
