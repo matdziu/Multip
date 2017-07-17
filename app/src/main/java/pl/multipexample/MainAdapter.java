@@ -16,7 +16,7 @@ public class MainAdapter extends DelegateAdapter {
     }
 
     @Override
-    public List<RecyclerItem> getDataSet() {
+    public List<RecyclerItem> getRecyclerItems() {
         return dataSet;
     }
 }

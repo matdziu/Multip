@@ -13,7 +13,7 @@ public abstract class DelegateAdapter extends RecyclerView.Adapter {
         this.viewHoldersFactory = viewHoldersFactory;
     }
 
-    public abstract List<RecyclerItem> getDataSet();
+    public abstract List<RecyclerItem> getRecyclerItems();
 
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
@@ -23,16 +23,16 @@ public abstract class DelegateAdapter extends RecyclerView.Adapter {
     @SuppressWarnings("unchecked")
     @Override
     public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
-        getDataSet().get(position).onBindViewHolder(holder);
+        getRecyclerItems().get(position).onBindViewHolder(holder);
     }
 
     @Override
     public int getItemViewType(int position) {
-        return getDataSet().get(position).getItemViewType();
+        return getRecyclerItems().get(position).getItemViewType();
     }
 
     @Override
     public int getItemCount() {
-        return getDataSet().size();
+        return getRecyclerItems().size();
     }
 }
