@@ -1,4 +1,4 @@
-package pl.multipexample.lib;
+package pl.multip;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.ViewGroup;
