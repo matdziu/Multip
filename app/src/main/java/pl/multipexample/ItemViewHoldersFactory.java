@@ -9,9 +9,9 @@ import android.view.ViewGroup;
 import pl.multipexample.items.ItemButton;
 import pl.multipexample.items.ItemPicture;
 import pl.multipexample.items.ItemText;
-import pl.multipexample.lib.RecyclerItemsFactory;
+import pl.multipexample.lib.ViewHoldersFactory;
 
-class ItemsFactory implements RecyclerItemsFactory {
+class ItemViewHoldersFactory implements ViewHoldersFactory {
 
     @SuppressLint("DefaultLocale")
     @Override
